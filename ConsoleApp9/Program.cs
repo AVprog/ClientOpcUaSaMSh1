@@ -29,8 +29,10 @@ namespace ClientOpcUaSaMSh1
         static void Main(string[] args)
         {
             Console.WriteLine(".net opcua client");
-            //   var endpointURL = "opc.tcp://localhost:4840/UA/MyLittleServer";
-           var endpointURL = "opc.tcp://DESKTOP-34KGPN0:53530/OPCUA/SimulationServer";
+            //certificate path
+            //s1\AppData\Local\OPC Foundation\CertificateStores\UA Applications\certs
+            //var endpointURL = "opc.tcp://localhost:4840/UA/MyLittleServer";
+            var endpointURL = "opc.tcp://DESKTOP-34KGPN0:53530/OPCUA/SimulationServer";
             int stopTimeout = Timeout.Infinite;
             bool autoAccept = false;
             MySampleClient client = new MySampleClient(endpointURL, autoAccept, stopTimeout);
